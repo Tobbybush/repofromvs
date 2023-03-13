@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest # Specify the operating system to run the job on
+    runs-on: Windows-latest # Specify the operating system to run the job on
 
     steps:
     - name: Checkout code
