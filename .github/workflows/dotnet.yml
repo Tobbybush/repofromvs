@@ -16,10 +16,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2 # Check out the code from the repository
-
-    - name: Install dependencies
-      run: npm install # Install the dependencies required to build the project
-
+    - name: restore-nuget-packages
+      uses: IT-Service/restore-nuget-packages@v1
     - name: Build project
       run: npm run build # Build the project using the specified command
 
